@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>English Learning Quiz</title>
+
+<style>
+  body {
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(135deg, #fceabb, #f8b500);
+    margin: 0;
+    padding: 0;
+  }
+
+  nav {
+    background: linear-gradient(90deg, #ff4e50, #f9d423);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  nav a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 25px;
+    font-weight: bold;
+    transition: background 0.3s;
+  }
+
+  nav a:hover {
+    background: rgba(255,255,255,0.3);
+    border-radius: 20px;
+  }
+
+  header {
+    text-align: center;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  }
+
+  .content {
+    max-width: 900px;
+    margin: 30px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+
+  h2 { color: #ff4e50; margin-top: 20px; }
+  p, label { font-size: 1em; line-height: 1.6; }
+  .question {
+    background-color: #d6f5f5;
+    padding: 12px;
+    border-left: 5px solid #00b09b;
+    margin: 12px 0;
+    border-radius: 8px;
+  }
+
+  .submit-btn {
+    display: inline-block;
+    background: #00b09b;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+
+  .submit-btn:hover {
+    background: #00e0c6;
+  }
+
+  .score {
+    margin-top: 20px;
+    background-color: #fff3b0;
+    padding: 15px;
+    border-left: 5px solid #f9d423;
+    border-radius: 8px;
+    font-weight: bold;
+  }
+
+  .back-btn {
+    display: inline-block;
+    background: #ff4e50;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 8px;
+    text-decoration: none;
+    margin-top: 15px;
+  }
+
+  .back-btn:hover {
+    background: #ff6a6a;
+  }
+</style>
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav>
+  <a href="index.html">🏠 Home</a>
+  <a href="grammar1.html">📘 Grammar</a>
+  <a href="grammar2.html">📘 Grammar 2</a>
+  <a href="vocab1.html">🗂️ Vocabulary 1</a>
+  <a href="vocab2.html">🗂️ Vocabulary 2</a>
+  <a href="conversation1.html">💬 Conversation 1</a>
+  <a href="conversation2.html">💬 Conversation 2</a>
+  <a href="test1.html">🧠 Tests</a>
+</nav>
+
+<header>
+  <h1>🧠 English Learning Quiz: Basic Level</h1>
+</header>
+
+<div class="content">
+  <h2>Basic Quiz (20 Questions)</h2>
+  <p>Test your English skills on grammar, vocabulary, synonyms, antonyms, and conversation phrases.</p>
+
+  <form id="quizForm">
+
+    <!-- 20 Questions -->
+    <!-- Q1 -->
+    <div class="question">
+      <p>1. Which word is a noun?</p>
+      <label><input type="radio" name="q1" value="a"> Run</label><br>
+      <label><input type="radio" name="q1" value="b"> Happiness</label><br>
+      <label><input type="radio" name="q1" value="c"> Quickly</label><br>
+      <label><input type="radio" name="q1" value="d"> Beautiful</label>
+    </div>
+
+    <!-- Q2 -->
+    <div class="question">
+      <p>2. Choose the correct synonym of 'Happy':</p>
+      <label><input type="radio" name="q2" value="a"> Sad</label><br>
+      <label><input type="radio" name="q2" value="b"> Joyful</label><br>
+      <label><input type="radio" name="q2" value="c"> Angry</label><br>
+      <label><input type="radio" name="q2" value="d"> Cold</label>
+    </div>
+
+    <!-- Q3 -->
+    <div class="question">
+      <p>3. Which sentence is correct?</p>
+      <label><input type="radio" name="q3" value="a"> She go to school.</label><br>
+      <label><input type="radio" name="q3" value="b"> She goes to school.</label><br>
+      <label><input type="radio" name="q3" value="c"> She going to school.</label><br>
+      <label><input type="radio" name="q3" value="d"> She gone to school.</label>
+    </div>
+
+    <!-- Q4 -->
+    <div class="question">
+      <p>4. Which is a greeting phrase?</p>
+      <label><input type="radio" name="q4" value="a"> Good morning</label><br>
+      <label><input type="radio" name="q4" value="b"> Because</label><br>
+      <label><input type="radio" name="q4" value="c"> Quickly</label><br>
+      <label><input type="radio" name="q4" value="d"> Teacher</label>
+    </div>
+
+    <!-- Q5 -->
+    <div class="question">
+      <p>5. Choose the correct antonym of 'Hot':</p>
+      <label><input type="radio" name="q5" value="a"> Warm</label><br>
+      <label><input type="radio" name="q5" value="b"> Cold</label><br>
+      <label><input type="radio" name="q5" value="c"> Boiling</label><br>
+      <label><input type="radio" name="q5" value="d"> Sunny</label>
+    </div>
+
+    <!-- Q6 -->
+    <div class="question">
+      <p>6. Which pronoun replaces 'Rahul and I'?</p>
+      <label><input type="radio" name="q6" value="a"> We</label><br>
+      <label><input type="radio" name="q6" value="b"> They</label><br>
+      <label><input type="radio" name="q6" value="c"> You</label><br>
+      <label><input type="radio" name="q6" value="d"> He</label>
+    </div>
+
+    <!-- Q7 -->
+    <div class="question">
+      <p>7. Choose the correct synonym of 'Big':</p>
+      <label><input type="radio" name="q7" value="a"> Tiny</label><br>
+      <label><input type="radio" name="q7" value="b"> Large</label><br>
+      <label><input type="radio" name="q7" value="c"> Small</label><br>
+      <label><input type="radio" name="q7" value="d"> Little</label>
+    </div>
+
+    <!-- Q8 -->
+    <div class="question">
+      <p>8. Which is an example of a proper noun?</p>
+      <label><input type="radio" name="q8" value="a"> city</label><br>
+      <label><input type="radio" name="q8" value="b"> London</label><br>
+      <label><input type="radio" name="q8" value="c"> school</label><br>
+      <label><input type="radio" name="q8" value="d"> book</label>
+    </div>
+
+    <!-- Q9 -->
+    <div class="question">
+      <p>9. Which word is an adjective?</p>
+      <label><input type="radio" name="q9" value="a"> Beautiful</label><br>
+      <label><input type="radio" name="q9" value="b"> Run</label><br>
+      <label><input type="radio" name="q9" value="c"> Happiness</label><br>
+      <label><input type="radio" name="q9" value="d"> Quickly</label>
+    </div>
+
+    <!-- Q10 -->
+    <div class="question">
+      <p>10. What is the opposite of 'Fast'?</p>
+      <label><input type="radio" name="q10" value="a"> Slow</label><br>
+      <label><input type="radio" name="q10" value="b"> Quick</label><br>
+      <label><input type="radio" name="q10" value="c"> Rapid</label><br>
+      <label><input type="radio" name="q10" value="d"> Speedy</label>
+    </div>
+
+    <!-- Q11 -->
+    <div class="question">
+      <p>11. Choose the correct past tense of 'Go':</p>
+      <label><input type="radio" name="q11" value="a"> Go</label><br>
+      <label><input type="radio" name="q11" value="b"> Went</label><br>
+      <label><input type="radio" name="q11" value="c"> Going</label><br>
+      <label><input type="radio" name="q11" value="d"> Gone</label>
+    </div>
+
+    <!-- Q12 -->
+    <div class="question">
+      <p>12. Which sentence is correct?</p>
+      <label><input type="radio" name="q12" value="a"> He is doctor.</label><br>
+      <label><input type="radio" name="q12" value="b"> He is a doctor.</label><br>
+      <label><input type="radio" name="q12" value="c"> He doctor.</label><br>
+      <label><input type="radio" name="q12" value="d"> He are doctor.</label>
+    </div>
+
+    <!-- Q13 -->
+    <div class="question">
+      <p>13. Identify the correct greeting for the evening:</p>
+      <label><input type="radio" name="q13" value="a"> Good morning</label><br>
+      <label><input type="radio" name="q13" value="b"> Good evening</label><br>
+      <label><input type="radio" name="q13" value="c"> Good night</label><br>
+      <label><input type="radio" name="q13" value="d"> Hello</label>
+    </div>
+
+    <!-- Q14 -->
+    <div class="question">
+      <p>14. Which pronoun correctly replaces 'the girl'?</p>
+      <label><input type="radio" name="q14" value="a"> He</label><br>
+      <label><input type="radio" name="q14" value="b"> She</label><br>
+      <label><input type="radio" name="q14" value="c"> It</label><br>
+      <label><input type="radio" name="q14" value="d"> They</label>
+    </div>
+
+    <!-- Q15 -->
+    <div class="question">
+      <p>15. Which word is an antonym of 'Easy'?</p>
+      <label><input type="radio" name="q15" value="a"> Simple</label><br>
+      <label><input type="radio" name="q15" value="b"> Difficult</label><br>
+      <label><input type="radio" name="q15" value="c"> Light</label><br>
+      <label><input type="radio" name="q15" value="d"> Quick</label>
+    </div>
+
+    <!-- Q16 -->
+    <div class="question">
+      <p>16. Choose the correct response to: "How are you?"</p>
+      <label><input type="radio" name="q16" value="a"> I am fine, thank you.</label><br>
+      <label><input type="radio" name="q16" value="b"> Good morning</label><br>
+      <label><input type="radio" name="q16" value="c"> See you later</label><br>
+      <label><input type="radio" name="q16" value="d"> Yes, please</label>
+    </div>
+
+    <!-- Q17 -->
+    <div class="question">
+      <p>17. Which is an example of a hobby phrase?</p>
+      <label><input type="radio" name="q17" value="a"> I enjoy painting.</label><br>
+      <label><input type="radio" name="q17" value="b"> Good morning!</label><br>
+      <label><input type="radio" name="q17" value="c"> How are you?</label><br>
+      <label><input type="radio" name="q17" value="d"> Thank you</label>
+    </div>
+
+    <!-- Q18 -->
+    <div class="question">
+      <p>18. Which word is a verb?</p>
+      <label><input type="radio" name="q18" value="a"> Sing</label><br>
+      <label><input type="radio" name="q18" value="b"> Happiness</label><br>
+      <label><input type="radio" name="q18" value="c"> Beauty</label><br>
+      <label><input type="radio" name="q18" value="d"> Quickly</label>
+    </div>
+
+    <!-- Q19 -->
+    <div class="question">
+      <p>19. Choose the correct synonym of 'Small':</p>
+      <label><input type="radio" name="q19" value="a"> Tiny</label><br>
+      <label><input type="radio" name="q19" value="b"> Large</label><br>
+      <label><input type="radio" name="q19" value="c"> Big</label><br>
+      <label><input type="radio" name="q19" value="d"> Huge</label>
+    </div>
+
+    <!-- Q20 -->
+    <div class="question">
+      <p>20. Which is a correct way to introduce yourself?</p>
+      <label><input type="radio" name="q20" value="a"> Hello, my name is Chinmayee.</label><br>
+      <label><input type="radio" name="q20" value="b"> Good morning!</label><br>
+      <label><input type="radio" name="q20" value="c"> How are you?</label><br>
+      <label><input type="radio" name="q20" value="d"> See you later</label>
+    </div>
+
+    <button type="button" class="submit-btn" onclick="checkQuiz()">Submit</button>
+  </form>
+
+  <div id="score" class="score" style="display:none;"></div>
+
+  <div class="tip">
+    💡 Tip: Review grammar, vocabulary, and conversation lessons before taking the quiz to improve your score.
+  </div>
+
+  <a href="index.html" class="back-btn">⬅ Back to Home</a>
+</div>
+
+<script>
+function checkQuiz() {
+  let score = 0;
+
+  const answers = {
+    q1: 'b', q2: 'b', q3: 'b', q4: 'a', q5: 'b',
+    q6: 'a', q7: 'b', q8: 'b', q9: 'a', q10: 'a',
+    q11: 'b', q12: 'b', q13: 'b', q14: 'b', q15: 'b',
+    q16: 'a', q17: 'a', q18: 'a', q19: 'a', q20: 'a'
+  };
+
+  for (let q in answers) {
+    const selected = document.querySelector('input[name="'+q+'"]:checked');
+    if (selected && selected.value === answers[q]) {
+      score++;
+    }
+  }
+
+  const resultDiv = document.getElementById('score');
+  resultDiv.style.display = 'block';
+  resultDiv.innerHTML = `Your Score: ${score} / 20`;
+
+  if(score === 20){
+    resultDiv.innerHTML += "<br>Excellent! 🌟 Perfect score!";
+  } else if(score >= 15){
+    resultDiv.innerHTML += "<br>Great job! 👍 Keep practicing.";
+  } else if(score >= 10){
+    resultDiv.innerHTML += "<br>Good effort! 💪 You can improve.";
+  } else {
+    resultDiv.innerHTML += "<br>Keep practicing! 📚 You can do better.";
+  }
+}
+</script>
+
+</body>
+</html>
+
